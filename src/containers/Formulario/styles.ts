@@ -11,6 +11,10 @@ export const Form = styled.form`
     resize: none;
     margin: 16px 0;
   }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 `
 
 export const Opcoes = styled.div`

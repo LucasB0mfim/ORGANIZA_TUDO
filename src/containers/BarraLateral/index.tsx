@@ -9,6 +9,8 @@ import * as S from './styles'
 import * as enums from '../../utils/enums/Tarefa'
 import { Botao, Campo } from '../../styles'
 
+import '../../styles'
+
 type Props = {
   mostrarFiltros: boolean
 }
@@ -19,7 +21,7 @@ const BarraLateral = ({ mostrarFiltros }: Props) => {
   const { termo } = useSelector((state: RootReducer) => state.filtro)
 
   return (
-    <S.Aside>
+    <S.Aside className={mostrarFiltros ? '' : 'esconderFiltro'}>
       <div>
         {mostrarFiltros ? (
           <>

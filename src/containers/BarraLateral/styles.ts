@@ -4,6 +4,10 @@ export const Aside = styled.aside`
   padding: 16px;
   background-color: #eee;
   height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    height: 50vh;
+  }
 `
 
 export const Filtros = styled.div`

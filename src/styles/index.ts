@@ -9,17 +9,34 @@ const EstiloGlobal = createGlobalStyle`
     font-family: Roboto, sans-serif;
     list-style: none;
   }
+
+  .esconderFiltro {
+    @media screen and (max-width: 768px) {
+      height: 10vh;
+      background-color: #fff;
+    }
+  }
+
 `
 
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 224px auto;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const MainContainer = styled.main`
   padding: 0 40px;
   height: 100vh;
   overflow-y: scroll;
+
+  @media screen and (max-width: 768px) {
+    height: 50vh;
+  }
 `
 
 export const Titulo = styled.h2`
