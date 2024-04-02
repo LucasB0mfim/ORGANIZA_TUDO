@@ -8,7 +8,7 @@ export const Aside = styled.aside<Props>`
   height: 100vh;
 
   @media screen and (max-width: 768px) {
-    height: ${(props) => (props.mostrarFiltros ? '50vh' : '10vh')};
+    height: ${(props) => (props.mostrarFiltros ? '40vh' : '10vh')};
     background-color: ${(props) => (props.mostrarFiltros ? '' : '#fff')};
   }
 `
