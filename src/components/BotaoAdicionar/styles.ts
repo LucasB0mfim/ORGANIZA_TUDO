@@ -18,9 +18,7 @@ export const Circulo = styled(Link)`
   text-decoration: none;
 
   @media screen and (max-width: 768px) {
-    height: 50px;
-    width: 50px;
-    font-size: 20px;
+    font-size: 25px;
     bottom: 20px;
     right: 20px;
   }
