@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
-export const Aside = styled.aside`
+import type { Props } from './index'
+
+export const Aside = styled.aside<Props>`
   padding: 16px;
   background-color: #eee;
   height: 100vh;
 
   @media screen and (max-width: 768px) {
-    height: 50vh;
+    height: ${(props) => (props.mostrarFiltros ? '50vh' : '10vh')};
+    background-color: ${(props) => (props.mostrarFiltros ? '' : '#fff')};
   }
 `
 

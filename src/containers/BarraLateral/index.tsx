@@ -11,7 +11,7 @@ import { Botao, Campo } from '../../styles'
 
 import '../../styles'
 
-type Props = {
+export type Props = {
   mostrarFiltros: boolean
 }
 
@@ -21,7 +21,7 @@ const BarraLateral = ({ mostrarFiltros }: Props) => {
   const { termo } = useSelector((state: RootReducer) => state.filtro)
 
   return (
-    <S.Aside className={mostrarFiltros ? '' : 'esconderFiltro'}>
+    <S.Aside mostrarFiltros={mostrarFiltros}>
       <div>
         {mostrarFiltros ? (
           <>

@@ -9,14 +9,6 @@ const EstiloGlobal = createGlobalStyle`
     font-family: Roboto, sans-serif;
     list-style: none;
   }
-
-  .esconderFiltro {
-    @media screen and (max-width: 768px) {
-      height: 10vh;
-      background-color: #fff;
-    }
-  }
-
 `
 
 export const Container = styled.div`
