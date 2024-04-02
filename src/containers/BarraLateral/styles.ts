@@ -11,6 +11,9 @@ export const Aside = styled.aside<Props>`
     height: ${(props) => (props.mostrarFiltros ? '40vh' : '10vh')};
     background-color: ${(props) => (props.mostrarFiltros ? '' : '#fff')};
     margin-bottom: ${(props) => (props.mostrarFiltros ? '20px' : '')};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 `
 
